@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        myPurple100: '#dacffc',
+                        myPurple500: '#7650dc',
+                        myYellow100: '#f9eee1',
+                        myYellow500: '#ffcb6b',
+                        myWhite: '#ffffff',
+                        myBlack: '#121212',
+                    },
+                    gridTemplateRows: {
+                        // Complex site-specific row configuration
+                        'layout': '140px 40px 120px 120px',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Bento Grid</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- <h1 class="text-myPurple500 bg-myPurple100">Bento Grid</h1> -->
+    <main class="w-full h-full bg-gray-200 flex items-center justify-center
+    px-20 py-10
+    ">
+        <section class="w-full h-full px-20 grid grid-cols-4 gap-6 grid-rows-layout">
+            <div class="rounded-[12px] bg-myYellow100 row-start-1 row-end-3 col-start-1 col-end-2 "></div>
+            <div class="rounded-[12px] bg-myPurple500 row-start-1 row-end-3 col-start-2 col-end-4  "></div>
+            <div class="rounded-[12px] bg-myPurple100 row-start-1 row-end-4 col-start-4 col-end-5  "></div>
+            <div class="rounded-[12px] bg-myYellow500 row-start-3 row-end-5 col-start-1 col-end-2 "></div>
+            <div class="rounded-[12px] bg-myWhite row-start-3 row-end-4 col-start-2 col-end-3 "></div>
+            <div class="rounded-[12px] bg-myYellow500 row-start-3 row-end-4 col-start-3 col-end-4 "></div>
+            <div class="rounded-[12px] bg-myWhite row-start-4 row-end-5 col-start-2 col-end-3 "></div>
+            <div class="rounded-[12px] bg-myPurple500 row-start-4 row-end-5 col-start-3 col-end-5  "></div>
+        </section>
+    </main>
+</body>
+
+</html>
